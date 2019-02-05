@@ -39,6 +39,13 @@
     $.get("test.html", function(data){
       alert(data);
     });
+
+    // ajax function is more powerful
+    $.ajax({
+      ur:"test.html"
+    }).done(function(data){
+      alert(data);
+    })
   </script>
 </body>
 </html>

@@ -36,16 +36,17 @@
   // we are taking the content of test.html and
   // puttig it into data.
 
-    $.get("test.html", function(data){
-      alert(data);
-    });
+    // $.get("test.html", function(data){
+    //   alert(data);
+    // });
 
     // ajax function is more powerful
     $.ajax({
       ur:"test.html"
     }).done(function(data){
-      alert(data);
-    })
+      // alert(data);
+      $("h1").html(data);
+    });
   </script>
 </body>
 </html>
